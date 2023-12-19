@@ -36,6 +36,7 @@
                 extend: {
                     colors: {
                         'web-primary': '#E76F51',
+                        'web-black': '#000000',
                     }
                 }
             }
@@ -56,13 +57,13 @@
 
     <!-- header section start -->
 
-    <header>
+    <header class="container mx-auto">
 
         <!-- nav section start -->
 
-        <nav>
+        <nav class="my-4">
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+                <div class="flex-1">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -72,25 +73,27 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-poppins text-base font-medium text-web-black">
                             <li><a>Home</a></li>
                             <li><a>Shop</a></li>
                             <li><a>News</a></li>
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="font-poppins text-2xl md:text-4xl lg:text-4xl font-bold text-web-black" href="#">Bike
+                        Dekho</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 font-poppins text-base font-medium text-web-black">
                         <li><a>Home</a></li>
                         <li><a>Shop</a></li>
                         <li><a>News</a></li>
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn">Button</a>
+                <div>
+                    <a
+                        class="btn bg-web-primary text-white font-poppins text-sm	font-normal content-center hover:text-web-black px-[52px] py-[17px]">Login</a>
                 </div>
             </div>
         </nav>
